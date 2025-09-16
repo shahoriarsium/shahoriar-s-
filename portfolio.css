@@ -1,0 +1,125 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* কমা দিয়ে আলাদা */
+html, body {
+  height: 100%;
+}
+
+body{
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+/* হেডার: টাইটেল বামে, ন্যাভ ডানে */
+header{
+  margin: 2rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;              /* হেডারে h1 আর nav এর মাঝে ফাঁক */
+}
+
+/* ঠিক এই কন্টেইনারেই গ্যাপ দিন (আপনার HTML এ class="n1") */
+.n1{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;            /* ===> লিংকগুলোর মাঝে গ্যাপ */
+  /* justify-content: space-between;  // দরকার নেই */
+}
+
+.homeh{
+  font-weight: 1000;       /* font: 700px; নয় */
+  font-size: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* সব লিংকের জন্য স্টাইল */
+a{
+  text-decoration: none;
+  font-weight: 700;       /* font: 700px; নয় */
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); 
+  padding: .4rem .6rem;   /* ক্লিক এরিয়া বড় */
+  transition: 0.3s;
+}
+a:hover { opacity: .85; color: rgb(120, 122, 125); }
+/*header end*/
+
+.M1{
+    margin: 2rem;
+    padding: 0.5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.homeh2{
+    text-align: center;
+    font-weight: 500;       /* font: 700px; নয় */
+  font-size: 2rem;
+  color: #fff;
+text-shadow: 0 1px 0  rgba(10, 14, 20, .58) ; 
+   padding: .4rem .6rem;   /* ক্লিক এরিয়া বড় */
+  transition: 1s;
+}
+.MB1{
+  margin: 0.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  border: 2px solid #159acf;
+  background: transparent;          /* ট্রান্সপারেন্ট স্টেট */
+  color: #fff;                      /* ডার্ক ব্যাকগ্রাউন্ডে সাদা লেখা */
+  font-family: 'Arial Narrow Bold', sans-serif;
+
+  /* text-shadow ঠিক ফরম্যাটে */
+  text-shadow: 0 1px 2px #7388f5;
+
+  /* স্মুথ ট্রানজিশন */
+  transition: background-color .25s ease, color .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+/* ✅ শুধু MB1 hover (গ্লোবাল button:hover নয়) */
+.MB1:hover{
+  background-color: #159acf;  /* নীল ব্যাকগ্রাউন্ড */
+  color: #111;                /* নীলের ওপর ডার্ক টেক্সট */
+  box-shadow: 0 4px 14px rgba(21,154,207,.35);
+}
+
+/* (ঐচ্ছিক) প্রেস করলে হালকা চাপা ইফেক্ট */
+.MB1:active{
+  transform: translateY(1px);
+}
+
+.M2{
+    text-align: center;
+    margin: 1rem;
+}
+.homeh3{
+    font: 700;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;   
+}
+.M3{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.homeh5{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+

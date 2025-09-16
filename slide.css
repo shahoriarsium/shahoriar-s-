@@ -1,0 +1,6 @@
+.motherdiv{
+    display: flex;
+   justify-content: center;
+   max-width: 300rem;
+   transition: 10s;
+}
